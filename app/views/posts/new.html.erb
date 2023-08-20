@@ -1,0 +1,8 @@
+<%= form_with url:"/posts/create", method:"post" do |form| %>
+
+<label>title: <input type="text" name="title"></label><br><br>
+<label>content: <textarea name="content" ></textarea></label><br><br>
+<button type="submit">save</button>
+<a href="/">back</a>
+
+<% end %>   

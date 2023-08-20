@@ -1,0 +1,11 @@
+<h1>Blogs Display</h1>
+<a href="posts/new">Create new post</a>
+<%= flash.notice %>
+<ul>
+    <% @posts.each { |post| %>
+    <li><a href="/posts/view?id=<%=post.id%>"><%= post.title %></a> </li>
+    <%}%>
+
+
+
+</ul>
