@@ -13,7 +13,10 @@ Rails.application.routes.draw do
   get "posts/new"
 
   post "posts/create"
-  
-  
+
+  get "posts/edit" => "posts#edit"
+  post "posts/update"
+
+
 
 end

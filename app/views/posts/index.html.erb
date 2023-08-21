@@ -1,9 +1,10 @@
 <h1>Blogs Display</h1>
-<a href="posts/new">Create new post</a>
+<a href="/posts/new">Create new post</a><br>
+
 <%= flash.notice %>
 <ul>
     <% @posts.each { |post| %>
-    <li><a href="/posts/view?id=<%=post.id%>"><%= post.title %></a> </li>
+    <li><a href="/posts/view?id=<%=post.id%>"><%= post.title %></a>----<a href="/posts/edit?id=<%=post.id%>">Edit</a> </li>
     <%}%>
 
 

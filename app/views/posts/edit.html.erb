@@ -1,0 +1,14 @@
+<h1>Content Edit page</h1><br>
+
+<%= form_with url:"/posts/update", method:"post" do |form| %>
+
+<input type="hidden" value="<%=@post.id%>" name="id">
+<label>title: <input type="text" name="title" value="<%=@post.title%>"</label><br><br>
+<label>content: <textarea name="content" ><%=@post.content%></textarea></label><br><br>
+<button type="submit">save</button>
+<a href="/">back</a>
+
+
+
+
+<%end%> 

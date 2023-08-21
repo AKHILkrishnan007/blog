@@ -1,5 +1,11 @@
 <h2> <%= @post.title %></h2>
 <h3> <%= @post.content %></h3>
+<h6> <%= @post.id %></h><br><br>
 
+
+<a href="/posts/edit?id=<%=@post.id%>">Edit</a>
 
 <a href="/">back</a>
+
+
+<%= flash.notice %>
